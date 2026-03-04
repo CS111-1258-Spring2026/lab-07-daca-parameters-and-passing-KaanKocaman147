@@ -24,37 +24,26 @@ public class Main
     // ------------------- MAIN METHOD -------------------
     public static void main(String[] args)
     {
-        // ------------------- GET USER INPUT -------------------
-        String surname = UtilityBelt.readString("Enter surname (2-45 chars): ", 2, 45);
-        String givenName = UtilityBelt.readString("Enter given name (2-45 chars): ", 2, 45);
-        String birthCountry = UtilityBelt.readString("Enter country of birth (2-45 chars): ", 2, 45);
-        String category = UtilityBelt.readString("Enter category (1-5 chars): ", 1, 5);
-        String cardNum = UtilityBelt.readString("Enter card number (5-20 chars): ", 5, 20);
-        String termsAndConditions = UtilityBelt.readString("Enter terms and conditions (2-45 chars): ", 2, 45);
-        char sex = UtilityBelt.readChar("Enter sex (M/F): ", "MFmf");
+        // ------------------- HARDCODED VALUES -------------------
+        String surname = "CHAPETON-LAMAS";
+        String givenName = "NERY";
+        String birthCountry = "Guatemala";
+        String category = "C09";
+        String cardNum = "SRC9876543210";
+        String termsAndConditions = "None";
+        char sex = 'M';
 
-        // USCIS numbers
-        int uscisNum1 = UtilityBelt.readInt("Enter first part of USCIS# (0-999): ", 0, 999);
-        int uscisNum2 = UtilityBelt.readInt("Enter second part of USCIS# (0-999): ", 0, 999);
-        int uscisNum3 = UtilityBelt.readInt("Enter third part of USCIS# (0-999): ", 0, 999);
+        int uscisNum1 = 12, uscisNum2 = 4, uscisNum3 = 789;
         String uscisNum = String.format("%03d-%03d-%03d", uscisNum1, uscisNum2, uscisNum3);
 
-        // Birthdate
-        int birthDay = UtilityBelt.readInt("Enter birth day (1-31): ", 1, 31);
-        String birthMonth = UtilityBelt.readString("Enter birth month (JAN-DEC): ", 3, 3).toUpperCase();
-        int birthYear = UtilityBelt.readInt("Enter birth year (1900-2100): ", 1900, 2100);
+        int birthDay = 1, birthYear = 1970;
+        String birthMonth = "JAN";
         String dateOfBirth = formatDate(birthMonth, birthDay, birthYear);
 
-        // Valid date
-        int validMonth = UtilityBelt.readInt("Enter valid month (1-12): ", 1, 12);
-        int validDay = UtilityBelt.readInt("Enter valid day (1-31): ", 1, 31);
-        int validYear = UtilityBelt.readInt("Enter valid year (2000-2100): ", 2000, 2100);
+        int validMonth = 2, validDay = 2, validYear = 2020;
         String validDate = formatDate(validMonth, validDay, validYear);
 
-        // Expiration date
-        int expireMonth = UtilityBelt.readInt("Enter expiration month (1-12): ", 1, 12);
-        int expireDay = UtilityBelt.readInt("Enter expiration day (1-31): ", 1, 31);
-        int expireYear = UtilityBelt.readInt("Enter expiration year (2000-2100): ", 2000, 2100);
+        int expireMonth = 2, expireDay = 2, expireYear = 2022;
         String expireDate = formatDate(expireMonth, expireDay, expireYear);
 
         // ------------------- PRINT CARD -------------------
