@@ -1,3 +1,7 @@
+// YOUR NAME: KAAN KOCAMAN
+// COLLABORATORS: ALL OF THE CODE 
+// DATE: 3/4/26
+
 public class Main
 {
     // ------------------- STATIC FINAL VARIABLES -------------------
