@@ -87,7 +87,7 @@ public class Main
         sb.append(String.format("║%-25s%-15s%-30s║%n", "", LABEL_VALID_DATE, validDate));
         sb.append(String.format("║%-25s%-15s%-30s║%n", "", LABEL_EXPIRE_DATE, expireDate));
         sb.append(String.format("║%-25s%-45s║%n", ASCII_CREDIT, LABEL_REENTRY_DISCLAIMER));
-        sb.append("╚══════════════════════════════════════════════════════════════════════╝\n");
+        sb.append("╚══════════════════════════════════════════════════════════════════════╝");
 
         return sb.toString();
     }
